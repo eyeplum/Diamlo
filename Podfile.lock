@@ -1,0 +1,9 @@
+PODS:
+  - AFNetworking (1.0)
+  - MKNetworkKit (0.85):
+    - Reachability (~> 3.0)
+  - Reachability (3.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git')
+  - MKNetworkKit
