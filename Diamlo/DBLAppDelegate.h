@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DBLEngin.h"
-
-#define ApplicationDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 @interface DBLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) DBLEngin *profileEngine;
+
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (void)saveContext;
 
 @end

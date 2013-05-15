@@ -1,3 +1,3 @@
-platform :ios
-pod 'MKNetworkKit'
-pod 'AFNetworking', :git => 'https://github.com/AFNetworking/AFNetworking.git'
+platform :ios, "5.0"
+  pod 'AFNetworking'
+  pod 'AFIncrementalStore'

@@ -29,13 +29,6 @@
     self.items = @[@"head", @"shoulders", @"torso", @"feet", @"hands", @"legs", @"bracers", @"mainHand", @"offHand", @"waist", @"rightFinger", @"leftFinger", @"neck"];
     self.itemNameMap = @{@"head":@"Head", @"shoulders":@"Shoulders", @"torso":@"Torso", @"feet":@"Feet", @"hands":@"Hands", @"legs":@"Legs", @"bracers":@"Bracers", @"mainHand":@"Main Hand", @"offHand":@"Off Hand", @"waist":@"Waist", @"rightFinger":@"Right Finger", @"leftFinger":@"Left Finger", @"neck":@"Neck"};
     self.itemImages = @{@"head":self.head, @"shoulders":self.shoulders, @"torso":self.torso, @"feet":self.feet, @"hands":self.hands, @"legs":self.legs, @"bracers":self.bracers, @"mainHand":self.mainHand, @"offHand":self.offHand, @"waist":self.waist, @"rightFinger":self.rightFinger, @"leftFinger":self.leftFinger, @"neck":self.neck};
-	DBLEngin *engine = [(DBLAppDelegate *)[[UIApplication sharedApplication] delegate] profileEngine];
-    [engine getHeroWithID:self.heroID andBattleTag:self.battleTag onCompletion:^(NSDictionary *hero) {
-        self.hero = hero;
-        [self reloadHeroProfile];
-    } onError:^(NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
-    }];
 }
 
 - (void)didReceiveMemoryWarning

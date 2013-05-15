@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B1C42A3160B38F90084935C /* Screen-Shot-2012-09-20-at-7.36.15-PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C42A2160B38F80084935C /* Screen-Shot-2012-09-20-at-7.36.15-PM.png */; };
 		0B1C42A6160B41A80084935C /* DBLItemDeailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C42A5160B41A80084935C /* DBLItemDeailViewController.m */; };
-		0B1DC26A1608A697005860EB /* DBLEngin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC2691608A697005860EB /* DBLEngin.m */; };
 		0B3A103B1609DF04008F3A63 /* DBLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A103A1609DF04008F3A63 /* DBLLoginViewController.m */; };
 		0B3A103F1609F924008F3A63 /* DBLHeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A103E1609F924008F3A63 /* DBLHeroViewController.m */; };
 		0B3D5A7C1626DBD800219027 /* cell_bg_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D5A7B1626DBD800219027 /* cell_bg_selected.png */; };
@@ -43,8 +42,6 @@
 		0B1C42A2160B38F80084935C /* Screen-Shot-2012-09-20-at-7.36.15-PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen-Shot-2012-09-20-at-7.36.15-PM.png"; sourceTree = "<group>"; };
 		0B1C42A4160B41A80084935C /* DBLItemDeailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLItemDeailViewController.h; sourceTree = "<group>"; };
 		0B1C42A5160B41A80084935C /* DBLItemDeailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLItemDeailViewController.m; sourceTree = "<group>"; };
-		0B1DC2681608A697005860EB /* DBLEngin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLEngin.h; sourceTree = "<group>"; };
-		0B1DC2691608A697005860EB /* DBLEngin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLEngin.m; sourceTree = "<group>"; };
 		0B3A10391609DF04008F3A63 /* DBLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLLoginViewController.h; sourceTree = "<group>"; };
 		0B3A103A1609DF04008F3A63 /* DBLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLLoginViewController.m; sourceTree = "<group>"; };
 		0B3A103D1609F924008F3A63 /* DBLHeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLHeroViewController.h; sourceTree = "<group>"; };
@@ -206,8 +203,6 @@
 		0B9C3D9B16074AD4003222C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0B1DC2681608A697005860EB /* DBLEngin.h */,
-				0B1DC2691608A697005860EB /* DBLEngin.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -310,7 +305,6 @@
 				0B9C3D781607441F003222C6 /* main.m in Sources */,
 				0B9C3D7C1607441F003222C6 /* DBLAppDelegate.m in Sources */,
 				0B9C3D8816074420003222C6 /* DBLViewController.m in Sources */,
-				0B1DC26A1608A697005860EB /* DBLEngin.m in Sources */,
 				0B3A103B1609DF04008F3A63 /* DBLLoginViewController.m in Sources */,
 				0B3A103F1609F924008F3A63 /* DBLHeroViewController.m in Sources */,
 				0B1C42A6160B41A80084935C /* DBLItemDeailViewController.m in Sources */,

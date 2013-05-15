@@ -34,14 +34,6 @@
                        @"gray"   : [UIColor colorWithWhite:0.576 alpha:1.000],
                        @"orange" : [UIColor colorWithRed:0.655 green:0.418 blue:0.001 alpha:1.000],
                        @"green"  : [UIColor colorWithRed:0.002 green:0.833 blue:0.004 alpha:1.000] };
-    
-    DBLEngin *engine = [(DBLAppDelegate *)[[UIApplication sharedApplication] delegate] profileEngine];
-    [engine getItemDetail:self.tooltipParams onCompletion:^(NSDictionary *item) {
-        self.item = item;
-        [self reloadItemDetail];
-    } onError:^(NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
-    }];
 }
 
 - (void)didReceiveMemoryWarning

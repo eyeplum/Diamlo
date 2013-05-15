@@ -1,9 +1,20 @@
 PODS:
-  - AFNetworking (1.0)
-  - MKNetworkKit (0.85):
-    - Reachability (~> 3.0)
-  - Reachability (3.0.0)
+  - AFIncrementalStore (0.4.1):
+    - AFNetworking (>= 0.9.0)
+    - InflectorKit
+    - TransformerKit
+  - AFNetworking (1.2.1)
+  - InflectorKit (0.0.1)
+  - TransformerKit (0.2.2)
 
 DEPENDENCIES:
-  - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git')
-  - MKNetworkKit
+  - AFIncrementalStore
+  - AFNetworking
+
+SPEC CHECKSUMS:
+  AFIncrementalStore: bbb4f113ef0442aef8901c5b3df9ae646a598970
+  AFNetworking: d1ba5908b233189e424e101721acef7905b58efb
+  InflectorKit: 9dccab02f95541093995adac639342c9eb9e6c12
+  TransformerKit: c07d1de4a661db2ca420092445750ab4ad67331a
+
+COCOAPODS: 0.19.1

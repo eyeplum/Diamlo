@@ -8,7 +8,6 @@
 
 #import "DBLViewController.h"
 #import "DBLAppDelegate.h"
-#import "DBLEngin.h"
 #import "DBLHeroViewController.h"
 #import "DBLCareerViewController.h"
 
@@ -82,23 +81,6 @@
 #pragma mark - Data Loader
 - (void)loadHerosFromServer
 {
-    DBLEngin *engine = [(DBLAppDelegate *)[[UIApplication sharedApplication] delegate] profileEngine];
-
-    [engine getBattleTagCareer:self.battleTag onCompletion:^(NSDictionary *career) {
-        self.career = career;
-        
-        NSDate *date = [NSDate dateWithTimeIntervalSince1970:[[self.career objectForKey:@"lastUpdated"] doubleValue]];
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        formatter.dateFormat = @"yyyy-MM-dd HH:mm";
-        
-        NSString *dateString = [formatter stringFromDate:date];
-        self.lastPlayed.text = [NSString stringWithFormat:@"Last Played: %@", dateString];
-        
-        self.heros = [self.career objectForKey:@"heroes"];
-        [self.heroTable reloadData];
-    } onError:^(NSError *error) {
-        NSLog(@"%@", [error localizedDescription]);
-    }];
 }
 
 
