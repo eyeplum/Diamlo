@@ -32,15 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.displayMapping =
-        @{
-        @"class" : @{@"monk" : @"Monk", @"barbarian" : @"Barbarian", @"wizard" : @"Wizard", @"demon-hunter" : @"Demon Hunter", @"witch-doctor" : @"Witch Doctor"},
-        @"hardcore" : @{@"0" : @"Normal", @"1" : @"Hardcore"},
-        @"dead" : @{@"0" : @"Alive", @"1" : @"Dead"}
-        };
-    
-	[self loadHerosFromServer];
+
+
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -49,12 +42,6 @@
     if (selected) [self.heroTable deselectRowAtIndexPath:selected animated:true];
     
     [super viewDidDisappear:animated];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)careerTapped:(UIBarButtonItem *)sender {
@@ -75,12 +62,6 @@
 //        DBLCareerViewController *vc = [segue destinationViewController];
 //        vc.career = self.career;
 //    }
-}
-
-
-#pragma mark - Data Loader
-- (void)loadHerosFromServer
-{
 }
 
 

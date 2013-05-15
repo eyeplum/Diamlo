@@ -632,62 +632,6 @@
         <image name="Screen-Shot-2012-09-20-at-7.36.15-PM.png" width="359" height="505"/>
         <image name="cell_footer.png" width="1064" height="580"/>
     </resources>
-    <classes>
-        <class className="DBLCareerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DBLCareerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="dismiss:" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="DBLHeroViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DBLHeroViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="bracers" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="feet" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="hands" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="head" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="leftFinger" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="legs" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mainHand" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="neck" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="offHand" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="rightFinger" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="shoulders" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="torso" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="waist" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="DBLItemDeailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DBLItemDeailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="attacksPerSecond" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="dps" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="itemImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="itemLevel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="requiredLevel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="DBLLoginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DBLLoginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="setSampleBattleTag:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="battleTag" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="battleTagNum" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="DBLViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DBLViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="careerTapped:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="heroTable" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="lastPlayed" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -35,6 +35,9 @@
 		0BD19FE21608171100EF8251 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD19FE11608171100EF8251 /* Security.framework */; };
 		0BE2B1DA160C9BAF00A75902 /* 2Screen-Shot-2012-09-21-at-8.53.29-PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2B1D9160C9BAF00A75902 /* 2Screen-Shot-2012-09-21-at-8.53.29-PM.png */; };
 		0BE2B1DD160C9BB300A75902 /* Screen-Shot-2012-09-21-at-8.53.29-PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2B1DC160C9BB300A75902 /* Screen-Shot-2012-09-21-at-8.53.29-PM.png */; };
+		B31394791CA833704A459659 /* DBLIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B3139608AE4580FC6B58059F /* DBLIncrementalStore.m */; };
+		B31397C488F8AEB851B665CE /* DBLAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B31391E8AB65AE07720823AE /* DBLAPIClient.m */; };
+		B3139D0B30F69F4CA54A5C9C /* DBLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3139CE57FFCFB9814ED9292 /* DBLModel.xcdatamodeld */; };
 		C3EDCF5A919D4ADB82D577A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 597C30B8F2B94A7EA7AF963B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,11 @@
 		0BE2B1D9160C9BAF00A75902 /* 2Screen-Shot-2012-09-21-at-8.53.29-PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2Screen-Shot-2012-09-21-at-8.53.29-PM.png"; path = "../2Screen-Shot-2012-09-21-at-8.53.29-PM.png"; sourceTree = "<group>"; };
 		0BE2B1DC160C9BB300A75902 /* Screen-Shot-2012-09-21-at-8.53.29-PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen-Shot-2012-09-21-at-8.53.29-PM.png"; path = "../Screen-Shot-2012-09-21-at-8.53.29-PM.png"; sourceTree = "<group>"; };
 		597C30B8F2B94A7EA7AF963B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B313908082306F7977E04490 /* DBLModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBLModel.xcdatamodel; sourceTree = "<group>"; };
+		B31391E8AB65AE07720823AE /* DBLAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLAPIClient.m; sourceTree = "<group>"; };
+		B31392DAA1524265A705F6CD /* DBLAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLAPIClient.h; sourceTree = "<group>"; };
+		B3139608AE4580FC6B58059F /* DBLIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLIncrementalStore.m; sourceTree = "<group>"; };
+		B3139ABCB8D7E4F43A09D284 /* DBLIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLIncrementalStore.h; sourceTree = "<group>"; };
 		DBACAAC468D1446D8B0AF5BF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -162,6 +170,7 @@
 				0B9C3D7D1607441F003222C6 /* Default.png */,
 				0B9C3D7F1607441F003222C6 /* Default@2x.png */,
 				0B9C3D8116074420003222C6 /* Default-568h@2x.png */,
+				B3139CE57FFCFB9814ED9292 /* DBLModel.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -203,6 +212,10 @@
 		0B9C3D9B16074AD4003222C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B3139608AE4580FC6B58059F /* DBLIncrementalStore.m */,
+				B3139ABCB8D7E4F43A09D284 /* DBLIncrementalStore.h */,
+				B31391E8AB65AE07720823AE /* DBLAPIClient.m */,
+				B31392DAA1524265A705F6CD /* DBLAPIClient.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -309,6 +322,9 @@
 				0B3A103F1609F924008F3A63 /* DBLHeroViewController.m in Sources */,
 				0B1C42A6160B41A80084935C /* DBLItemDeailViewController.m in Sources */,
 				0B935EF91622F9B800EF20B6 /* DBLCareerViewController.m in Sources */,
+				B31394791CA833704A459659 /* DBLIncrementalStore.m in Sources */,
+				B3139D0B30F69F4CA54A5C9C /* DBLModel.xcdatamodeld in Sources */,
+				B31397C488F8AEB851B665CE /* DBLAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +410,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "12357DA0-3742-4969-8626-F6FF76FD2AC6";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,6 +426,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "12357DA0-3742-4969-8626-F6FF76FD2AC6";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -435,6 +453,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B3139CE57FFCFB9814ED9292 /* DBLModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B313908082306F7977E04490 /* DBLModel.xcdatamodel */,
+			);
+			currentVersion = B313908082306F7977E04490 /* DBLModel.xcdatamodel */;
+			path = DBLModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0B9C3D5E1607441F003222C6 /* Project object */;
 }
