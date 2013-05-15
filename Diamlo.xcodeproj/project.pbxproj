@@ -36,6 +36,7 @@
 		0BE2B1DD160C9BB300A75902 /* Screen-Shot-2012-09-21-at-8.53.29-PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2B1DC160C9BB300A75902 /* Screen-Shot-2012-09-21-at-8.53.29-PM.png */; };
 		91409EBE1743EF8100EF3CCE /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 91409EBD1743EF8100EF3CCE /* Hero.m */; };
 		91409EC11743EF9000EF3CCE /* Career.m in Sources */ = {isa = PBXBuildFile; fileRef = 91409EC01743EF9000EF3CCE /* Career.m */; };
+		91409EC31743F1E200EF3CCE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91409EC21743F1E200EF3CCE /* MobileCoreServices.framework */; };
 		B31394791CA833704A459659 /* DBLIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B3139608AE4580FC6B58059F /* DBLIncrementalStore.m */; };
 		B31397C488F8AEB851B665CE /* DBLAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B31391E8AB65AE07720823AE /* DBLAPIClient.m */; };
 		B3139D0B30F69F4CA54A5C9C /* DBLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3139CE57FFCFB9814ED9292 /* DBLModel.xcdatamodeld */; };
@@ -83,6 +84,7 @@
 		91409EBD1743EF8100EF3CCE /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		91409EBF1743EF9000EF3CCE /* Career.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Career.h; sourceTree = "<group>"; };
 		91409EC01743EF9000EF3CCE /* Career.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Career.m; sourceTree = "<group>"; };
+		91409EC21743F1E200EF3CCE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B313908082306F7977E04490 /* DBLModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBLModel.xcdatamodel; sourceTree = "<group>"; };
 		B31391E8AB65AE07720823AE /* DBLAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLAPIClient.m; sourceTree = "<group>"; };
 		B31392DAA1524265A705F6CD /* DBLAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLAPIClient.h; sourceTree = "<group>"; };
@@ -96,8 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD19FE21608171100EF8251 /* Security.framework in Frameworks */,
 				0BD19FE01608170600EF8251 /* SystemConfiguration.framework in Frameworks */,
+				91409EC31743F1E200EF3CCE /* MobileCoreServices.framework in Frameworks */,
+				0BD19FE21608171100EF8251 /* Security.framework in Frameworks */,
 				0BD19FDE160816FC00EF8251 /* CFNetwork.framework in Frameworks */,
 				0B9C3D6C1607441F003222C6 /* UIKit.framework in Frameworks */,
 				0B9C3D6E1607441F003222C6 /* Foundation.framework in Frameworks */,
@@ -112,6 +115,7 @@
 		0B9C3D5C1607441F003222C6 = {
 			isa = PBXGroup;
 			children = (
+				91409EC21743F1E200EF3CCE /* MobileCoreServices.framework */,
 				0B9C3D711607441F003222C6 /* Diamlo */,
 				0B9C3D6A1607441F003222C6 /* Frameworks */,
 				0B9C3D681607441F003222C6 /* Products */,
@@ -365,6 +369,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -379,6 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -392,6 +398,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -400,6 +407,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

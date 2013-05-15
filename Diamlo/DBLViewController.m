@@ -9,7 +9,6 @@
 #import "DBLViewController.h"
 #import "DBLAppDelegate.h"
 #import "DBLHeroViewController.h"
-#import "DBLCareerViewController.h"
 
 #define NameLabel 901
 #define LevelLabel 902
