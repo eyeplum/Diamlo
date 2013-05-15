@@ -2,18 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Diamlo/Career.h">
-   </FileRef>
-   <FileRef
-      location = "group:Diamlo/Career.m">
-   </FileRef>
-   <FileRef
-      location = "group:Diamlo/Hero.h">
-   </FileRef>
-   <FileRef
-      location = "group:Diamlo/Hero.m">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef

@@ -1,14 +1,15 @@
 //
 //  Career.h
-//  
+//  Diamlo
 //
-//  Created by eyeplum on 5/15/13.
-//
+//  Created by Yan Li on 5/16/13.
+//  Copyright (c) 2013 eyeplum. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Hero;
 
 @interface Career : NSManagedObject
 
@@ -17,8 +18,8 @@
 
 @interface Career (CoreDataGeneratedAccessors)
 
-- (void)addHerosObject:(NSManagedObject *)value;
-- (void)removeHerosObject:(NSManagedObject *)value;
+- (void)addHerosObject:(Hero *)value;
+- (void)removeHerosObject:(Hero *)value;
 - (void)addHeros:(NSSet *)values;
 - (void)removeHeros:(NSSet *)values;
 
