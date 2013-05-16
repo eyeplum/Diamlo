@@ -40,11 +40,10 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
 - (NSMutableURLRequest *)requestForFetchRequest:(NSFetchRequest *)fetchRequest
                                     withContext:(NSManagedObjectContext *)context {
     NSMutableURLRequest *mutableURLRequest = nil;
-    if ([fetchRequest.entityName isEqualToString:@"Hero"]) {
-        mutableURLRequest = [self requestWithMethod:@"GET"
-                                               path:@"api/d3/profile/jackfrost-1841/"
-                                         parameters:nil];
-        NSLog(@"%@", mutableURLRequest.URL);
+    if ([fetchRequest.entityName isEqualToString:@"Career"]) {
+        mutableURLRequest = [self getRequestWithPath:@"api/d3/profile/jackfrost-1841/"];
+    } else if ([fetchRequest.entityName isEqualToString:@"Hero"]) {
+        mutableURLRequest = [self getRequestWithPath:@"api/d3/profile/jackfrost-1841/"];
     }
 
     return mutableURLRequest;
@@ -59,11 +58,13 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
     id ro = [super representationOrArrayOfRepresentationsOfEntity:entity
                                                fromResponseObject:json];
 
-    if ([ro isKindOfClass:[NSDictionary class]]) {
-        id value = nil;
-        value = [ro valueForKey:@"heroes"];
-        if (value) {
-            return value;
+    if ([entity.name isEqualToString:@"Hero"]) {
+        if ([ro isKindOfClass:[NSDictionary class]]) {
+            id value = nil;
+            value = [ro valueForKey:@"heroes"];
+            if (value) {
+                return value;
+            }
         }
     }
 
@@ -80,6 +81,14 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
     if ([entity.name isEqualToString:@"Hero"]) {
         mutablePropertyValues[@"name"] = representation[@"name"];
         mutablePropertyValues[@"level"] = representation[@"level"];
+        mutablePropertyValues[@"heroID"] = representation[@"id"];
+        mutablePropertyValues[@"gender"] = representation[@"gender"];
+        mutablePropertyValues[@"lastUpdated"] = representation[@"last-updated"];
+        mutablePropertyValues[@"dead"] = representation[@"dead"];
+    } else if ([entity.name isEqualToString:@"Career"]) {
+        mutablePropertyValues[@"lastHeroPlayed"] = representation[@"lastHeroPlayed"];
+        mutablePropertyValues[@"lastUpdated"] = representation[@"lastUpdated"];
+        mutablePropertyValues[@"battleTag"] = representation[@"battleTag"];
     }
 
     return mutablePropertyValues;
@@ -97,5 +106,13 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
                         inManagedObjectContext:(NSManagedObjectContext *)context {
     return NO;
 }
+
+
+#pragma mark - Helper Methods
+
+- (NSMutableURLRequest *)getRequestWithPath:(NSString *)path {
+    return [self requestWithMethod:@"GET" path:path parameters:nil];
+}
+
 
 @end
