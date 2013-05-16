@@ -51,14 +51,8 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
 }
 
 
-- (id)representationOrArrayOfRepresentationsFromResponseObject:(id)responseObject {
-    return [responseObject valueForKey:@"heroes"];
-}
-
-
 - (id)representationOrArrayOfRepresentationsOfEntity:(NSEntityDescription *)entity
-                                  fromResponseObject:(id)responseObject
-{
+                                  fromResponseObject:(id)responseObject {
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseObject
                                                          options:NSJSONReadingMutableContainers error:nil];
 
@@ -84,7 +78,8 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
                                                                             ofEntity:entity
                                                                         fromResponse:response] mutableCopy];
     if ([entity.name isEqualToString:@"Hero"]) {
-        [mutablePropertyValues setValue:[representation valueForKey:@"name"] forKey:@"name"];
+        mutablePropertyValues[@"name"] = representation[@"name"];
+        mutablePropertyValues[@"level"] = representation[@"level"];
     }
 
     return mutablePropertyValues;

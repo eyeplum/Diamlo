@@ -30,10 +30,6 @@ static NSString *ProfileCell = @"Profile Cell";
 {
     [super viewDidLoad];
 
-    [self.heroTable registerClass:[UITableViewCell class] forCellReuseIdentifier:ProfileCell];
-    [self.heroTable setDelegate:self];
-    [self.heroTable setDataSource:self];
-
     DBLAppDelegate *appDelegate = (DBLAppDelegate *) [[UIApplication sharedApplication] delegate];
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Hero"];
     fetchRequest.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"level" ascending:NO]];
@@ -68,9 +64,16 @@ static NSString *ProfileCell = @"Profile Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ProfileCell];
     cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_bg.png"]];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
+    Hero *hero = [self.fetchedResultsController objectAtIndexPath:indexPath];
+
     cell.textLabel.textColor = [UIColor whiteColor];
-    cell.textLabel.text = [[self.fetchedResultsController objectAtIndexPath:indexPath] name];
     cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.textLabel.text = hero.name;
+
+    cell.detailTextLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Lv.%@", hero.level];
 
     return cell;
 }
