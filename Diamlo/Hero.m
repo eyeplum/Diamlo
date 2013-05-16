@@ -7,7 +7,6 @@
 //
 
 #import "Hero.h"
-#import "Career.h"
 
 
 @implementation Hero
@@ -19,6 +18,5 @@
 @dynamic lastUpdated;
 @dynamic level;
 @dynamic name;
-@dynamic career;
 
 @end

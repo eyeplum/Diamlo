@@ -34,9 +34,8 @@
 		0BD19FE21608171100EF8251 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD19FE11608171100EF8251 /* Security.framework */; };
 		0BE2B1DA160C9BAF00A75902 /* 2Screen-Shot-2012-09-21-at-8.53.29-PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2B1D9160C9BAF00A75902 /* 2Screen-Shot-2012-09-21-at-8.53.29-PM.png */; };
 		0BE2B1DD160C9BB300A75902 /* Screen-Shot-2012-09-21-at-8.53.29-PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2B1DC160C9BB300A75902 /* Screen-Shot-2012-09-21-at-8.53.29-PM.png */; };
-		91409EBE1743EF8100EF3CCE /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 91409EBD1743EF8100EF3CCE /* Hero.m */; };
-		91409EC11743EF9000EF3CCE /* Career.m in Sources */ = {isa = PBXBuildFile; fileRef = 91409EC01743EF9000EF3CCE /* Career.m */; };
 		91409EC31743F1E200EF3CCE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91409EC21743F1E200EF3CCE /* MobileCoreServices.framework */; };
+		91409EC81744FBB900EF3CCE /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 91409EC71744FBB900EF3CCE /* Hero.m */; };
 		B31394791CA833704A459659 /* DBLIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B3139608AE4580FC6B58059F /* DBLIncrementalStore.m */; };
 		B31397C488F8AEB851B665CE /* DBLAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B31391E8AB65AE07720823AE /* DBLAPIClient.m */; };
 		B3139D0B30F69F4CA54A5C9C /* DBLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3139CE57FFCFB9814ED9292 /* DBLModel.xcdatamodeld */; };
@@ -80,11 +79,9 @@
 		0BE2B1D9160C9BAF00A75902 /* 2Screen-Shot-2012-09-21-at-8.53.29-PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2Screen-Shot-2012-09-21-at-8.53.29-PM.png"; path = "../2Screen-Shot-2012-09-21-at-8.53.29-PM.png"; sourceTree = "<group>"; };
 		0BE2B1DC160C9BB300A75902 /* Screen-Shot-2012-09-21-at-8.53.29-PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen-Shot-2012-09-21-at-8.53.29-PM.png"; path = "../Screen-Shot-2012-09-21-at-8.53.29-PM.png"; sourceTree = "<group>"; };
 		597C30B8F2B94A7EA7AF963B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		91409EBC1743EF8100EF3CCE /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		91409EBD1743EF8100EF3CCE /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
-		91409EBF1743EF9000EF3CCE /* Career.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Career.h; sourceTree = "<group>"; };
-		91409EC01743EF9000EF3CCE /* Career.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Career.m; sourceTree = "<group>"; };
 		91409EC21743F1E200EF3CCE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		91409EC61744FBB900EF3CCE /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		91409EC71744FBB900EF3CCE /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		B313908082306F7977E04490 /* DBLModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBLModel.xcdatamodel; sourceTree = "<group>"; };
 		B31391E8AB65AE07720823AE /* DBLAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLAPIClient.m; sourceTree = "<group>"; };
 		B31392DAA1524265A705F6CD /* DBLAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLAPIClient.h; sourceTree = "<group>"; };
@@ -115,7 +112,6 @@
 		0B9C3D5C1607441F003222C6 = {
 			isa = PBXGroup;
 			children = (
-				91409EC21743F1E200EF3CCE /* MobileCoreServices.framework */,
 				0B9C3D711607441F003222C6 /* Diamlo */,
 				0B9C3D6A1607441F003222C6 /* Frameworks */,
 				0B9C3D681607441F003222C6 /* Products */,
@@ -134,6 +130,7 @@
 		0B9C3D6A1607441F003222C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91409EC21743F1E200EF3CCE /* MobileCoreServices.framework */,
 				0BD19FE11608171100EF8251 /* Security.framework */,
 				0BD19FDF1608170600EF8251 /* SystemConfiguration.framework */,
 				0BD19FDD160816FC00EF8251 /* CFNetwork.framework */,
@@ -217,14 +214,12 @@
 			isa = PBXGroup;
 			children = (
 				B3139CE57FFCFB9814ED9292 /* DBLModel.xcdatamodeld */,
-				91409EBF1743EF9000EF3CCE /* Career.h */,
-				91409EC01743EF9000EF3CCE /* Career.m */,
-				91409EBC1743EF8100EF3CCE /* Hero.h */,
-				91409EBD1743EF8100EF3CCE /* Hero.m */,
 				B3139608AE4580FC6B58059F /* DBLIncrementalStore.m */,
 				B3139ABCB8D7E4F43A09D284 /* DBLIncrementalStore.h */,
 				B31391E8AB65AE07720823AE /* DBLAPIClient.m */,
 				B31392DAA1524265A705F6CD /* DBLAPIClient.h */,
+				91409EC61744FBB900EF3CCE /* Hero.h */,
+				91409EC71744FBB900EF3CCE /* Hero.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -333,8 +328,7 @@
 				B31394791CA833704A459659 /* DBLIncrementalStore.m in Sources */,
 				B3139D0B30F69F4CA54A5C9C /* DBLModel.xcdatamodeld in Sources */,
 				B31397C488F8AEB851B665CE /* DBLAPIClient.m in Sources */,
-				91409EBE1743EF8100EF3CCE /* Hero.m in Sources */,
-				91409EC11743EF9000EF3CCE /* Career.m in Sources */,
+				91409EC81744FBB900EF3CCE /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

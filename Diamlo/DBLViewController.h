@@ -13,6 +13,5 @@
 @property (strong, nonatomic) IBOutlet UITableView *heroTable;
 @property (strong, nonatomic) IBOutlet UILabel *lastPlayed;
 @property (strong, nonatomic) NSString *battleTag;
-- (IBAction)careerTapped:(UIBarButtonItem *)sender;
 
 @end
