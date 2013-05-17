@@ -2,12 +2,13 @@
 //  Hero.h
 //  Diamlo
 //
-//  Created by Yan Li on 5/16/13.
+//  Created by Yan Li on 5/17/13.
 //  Copyright (c) 2013 eyeplum. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+
 
 @class Career;
 
@@ -20,6 +21,7 @@
 @property (nonatomic, retain) NSNumber * lastUpdated;
 @property (nonatomic, retain) NSNumber * level;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * heroClass;
 @property (nonatomic, retain) Career *career;
 
 @end

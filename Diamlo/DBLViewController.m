@@ -9,12 +9,8 @@
 #import "DBLViewController.h"
 #import "DBLAppDelegate.h"
 #import "Hero.h"
+#import "Career.h"
 
-#define NameLabel 901
-#define LevelLabel 902
-#define ClassLabel 903
-#define HardcoreLabel 904
-#define DeadLabel 905
 
 static NSString *ProfileCell = @"Profile Cell";
 
@@ -31,12 +27,14 @@ static NSString *ProfileCell = @"Profile Cell";
     [super viewDidLoad];
 
     DBLAppDelegate *appDelegate = (DBLAppDelegate *) [[UIApplication sharedApplication] delegate];
+
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Hero"];
     fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"level" ascending:NO]];
+
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                         managedObjectContext:appDelegate.managedObjectContext
                                                                           sectionNameKeyPath:nil
-                                                                                   cacheName:@"heros"];
+                                                                                   cacheName:@"hero"];
     self.fetchedResultsController.delegate = self;
     [self.fetchedResultsController performFetch:nil];
 }
@@ -67,13 +65,13 @@ static NSString *ProfileCell = @"Profile Cell";
 
     Hero *hero = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
+    cell.textLabel.text = hero.name;
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.backgroundColor = [UIColor clearColor];
-    cell.textLabel.text = hero.name;
 
-    cell.detailTextLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.text = hero.heroClass;
+    cell.detailTextLabel.textColor = [UIColor darkGrayColor];
     cell.detailTextLabel.backgroundColor = [UIColor clearColor];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Lv.%@", hero.level];
 
     return cell;
 }

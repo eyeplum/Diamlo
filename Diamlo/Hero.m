@@ -2,7 +2,7 @@
 //  Hero.m
 //  Diamlo
 //
-//  Created by Yan Li on 5/16/13.
+//  Created by Yan Li on 5/17/13.
 //  Copyright (c) 2013 eyeplum. All rights reserved.
 //
 
@@ -19,6 +19,7 @@
 @dynamic lastUpdated;
 @dynamic level;
 @dynamic name;
+@dynamic heroClass;
 @dynamic career;
 
 @end

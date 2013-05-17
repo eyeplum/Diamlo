@@ -78,17 +78,19 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
     NSMutableDictionary *mutablePropertyValues = [[super attributesForRepresentation:representation
                                                                             ofEntity:entity
                                                                         fromResponse:response] mutableCopy];
-    if ([entity.name isEqualToString:@"Hero"]) {
+    if ([entity.name isEqualToString:@"Career"]) {
+        mutablePropertyValues[@"lastHeroPlayed"] = representation[@"lastHeroPlayed"];
+        mutablePropertyValues[@"lastUpdated"] = representation[@"lastUpdated"];
+        mutablePropertyValues[@"battleTag"] = representation[@"battleTag"];
+        mutablePropertyValues[@"heroes"] = representation[@"heroes"];
+    } else if ([entity.name isEqualToString:@"Hero"]) {
         mutablePropertyValues[@"name"] = representation[@"name"];
         mutablePropertyValues[@"level"] = representation[@"level"];
         mutablePropertyValues[@"heroID"] = representation[@"id"];
         mutablePropertyValues[@"gender"] = representation[@"gender"];
         mutablePropertyValues[@"lastUpdated"] = representation[@"last-updated"];
         mutablePropertyValues[@"dead"] = representation[@"dead"];
-    } else if ([entity.name isEqualToString:@"Career"]) {
-        mutablePropertyValues[@"lastHeroPlayed"] = representation[@"lastHeroPlayed"];
-        mutablePropertyValues[@"lastUpdated"] = representation[@"lastUpdated"];
-        mutablePropertyValues[@"battleTag"] = representation[@"battleTag"];
+        mutablePropertyValues[@"heroClass"] = representation[@"class"];
     }
 
     return mutablePropertyValues;

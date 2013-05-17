@@ -4,20 +4,21 @@
         <attribute name="battleTag" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastHeroPlayed" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="lastUpdated" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <relationship name="heros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="career" inverseEntity="Hero" syncable="YES"/>
+        <relationship name="heroes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="career" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <entity name="Hero" representedClassName="Hero" syncable="YES">
         <attribute name="dead" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="hardcore" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="heroClass" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="heroID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="lastUpdated" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="career" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Career" inverseName="heros" inverseEntity="Career" syncable="YES"/>
+        <relationship name="career" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Career" inverseName="heroes" inverseEntity="Career" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Hero" positionX="-369" positionY="218" width="128" height="163"/>
-        <element name="Career" positionX="-524" positionY="216" width="128" height="103"/>
+        <element name="Career" positionX="-524" positionY="216" width="128" height="105"/>
+        <element name="Hero" positionX="-369" positionY="218" width="128" height="180"/>
     </elements>
 </model>
