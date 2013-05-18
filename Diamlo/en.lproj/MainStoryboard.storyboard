@@ -195,9 +195,6 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <connections>
-                                            <segue destination="jmH-mq-NlL" kind="push" identifier="ViewHeroDetail" id="kjN-pP-WXP"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -255,7 +252,7 @@
             <objects>
                 <viewController id="jmH-mq-NlL" customClass="DBLHeroViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRl-yk-fH5">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Screen-Shot-2012-09-20-at-7.36.15-PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="fen-YB-maW">
@@ -412,7 +409,7 @@
             <objects>
                 <viewController id="UoM-TY-EgI" customClass="DBLItemDeailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eai-Mh-bxa">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ame-xm-ee7">

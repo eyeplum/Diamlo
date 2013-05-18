@@ -28,13 +28,13 @@ static NSString *ProfileCell = @"Profile Cell";
 
     DBLAppDelegate *appDelegate = (DBLAppDelegate *) [[UIApplication sharedApplication] delegate];
 
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Hero"];
-    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"level" ascending:NO]];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Career"];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"battleTag" ascending:NO]];
 
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                         managedObjectContext:appDelegate.managedObjectContext
                                                                           sectionNameKeyPath:nil
-                                                                                   cacheName:@"hero"];
+                                                                                   cacheName:@"career"];
     self.fetchedResultsController.delegate = self;
     [self.fetchedResultsController performFetch:nil];
 }
@@ -63,15 +63,17 @@ static NSString *ProfileCell = @"Profile Cell";
     cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_bg.png"]];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
-    Hero *hero = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Career *career = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
-    cell.textLabel.text = hero.name;
+    cell.textLabel.text = career.battleTag;
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.backgroundColor = [UIColor clearColor];
 
-    cell.detailTextLabel.text = hero.heroClass;
+    cell.detailTextLabel.text = [[NSDate dateWithTimeIntervalSince1970:[career.lastUpdated doubleValue]] description];
     cell.detailTextLabel.textColor = [UIColor darkGrayColor];
     cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.shadowOffset = CGSizeMake(0, 1);
+    cell.detailTextLabel.shadowColor = [UIColor blackColor];
 
     return cell;
 }

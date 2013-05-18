@@ -42,8 +42,6 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
     NSMutableURLRequest *mutableURLRequest = nil;
     if ([fetchRequest.entityName isEqualToString:@"Career"]) {
         mutableURLRequest = [self getRequestWithPath:@"api/d3/profile/jackfrost-1841/"];
-    } else if ([fetchRequest.entityName isEqualToString:@"Hero"]) {
-        mutableURLRequest = [self getRequestWithPath:@"api/d3/profile/jackfrost-1841/"];
     }
 
     return mutableURLRequest;
@@ -72,6 +70,19 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
 }
 
 
+- (NSString *)resourceIdentifierForRepresentation:(NSDictionary *)representation
+                                         ofEntity:(NSEntityDescription *)entity
+                                     fromResponse:(NSHTTPURLResponse *)response {
+    if ([entity.name isEqualToString:@"Career"]) {
+        return representation[@"battleTag"];
+    }
+
+    return [super resourceIdentifierForRepresentation:representation
+                                             ofEntity:entity
+                                         fromResponse:response];
+}
+
+
 - (NSDictionary *)attributesForRepresentation:(NSDictionary *)representation
                                      ofEntity:(NSEntityDescription *)entity
                                  fromResponse:(NSHTTPURLResponse *)response {
@@ -82,7 +93,6 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
         mutablePropertyValues[@"lastHeroPlayed"] = representation[@"lastHeroPlayed"];
         mutablePropertyValues[@"lastUpdated"] = representation[@"lastUpdated"];
         mutablePropertyValues[@"battleTag"] = representation[@"battleTag"];
-        mutablePropertyValues[@"heroes"] = representation[@"heroes"];
     } else if ([entity.name isEqualToString:@"Hero"]) {
         mutablePropertyValues[@"name"] = representation[@"name"];
         mutablePropertyValues[@"level"] = representation[@"level"];
