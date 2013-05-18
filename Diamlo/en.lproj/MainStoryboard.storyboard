@@ -28,74 +28,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Battle Tag" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hNc-mi-1DJ">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Battle Tag No." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAS-2b-2Ip">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnI-Ag-hio">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="0cv-FC-WBd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" red="0.58609693880000002" green="0.0" blue="0.005486896265" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="sample">
-                                    <color key="titleColor" red="0.58609693880000002" green="0.0" blue="0.005486896265" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="setSampleBattleTag:" destination="ocH-px-cfj" eventType="touchUpInside" id="9fz-NE-Tj7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XX0-xW-eEN">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="PxJ-f3-byl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" red="0.58609693880000002" green="0.0" blue="0.005486896265" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="sample">
-                                    <color key="titleColor" red="0.58609693880000002" green="0.0" blue="0.005486896265" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="setSampleBattleTag:" destination="ocH-px-cfj" eventType="touchUpInside" id="rhG-tm-Tha"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwh-ar-4lq">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="jsv-FX-UMV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="tintColor" red="0.58609693880000002" green="0.0" blue="0.005486896265" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="sample">
-                                    <color key="titleColor" red="0.58609693880000002" green="0.0" blue="0.005486896265" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="setSampleBattleTag:" destination="ocH-px-cfj" eventType="touchUpInside" id="9oC-X2-41Z"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY5-HA-D5A">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="KO7-co-EEV"/>
+                                    <constraint firstAttribute="height" constant="124" id="Ggh-qD-aPz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" red="0.58609693880000002" green="0.0" blue="0.005486896265" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="GO">
-                                    <color key="titleColor" red="0.58609693880000002" green="0.0" blue="0.005486896265" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="GO" backgroundImage="cell_bg.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,31 +46,31 @@
                                     <segue destination="2" kind="push" identifier="fireHTTPGetRequest" id="NWj-60-9Qe"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="2Screen-Shot-2012-09-21-at-8.53.29-PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="tWv-xS-eZI"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Diamlo - A Diablo Career Browser" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="284" translatesAutoresizingMaskIntoConstraints="NO" id="GwN-4U-l2b">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="i4P-cA-ipN"/>
+                                    <constraint firstAttribute="height" constant="24" id="ujn-0E-G8n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NY5-HA-D5A" firstAttribute="top" secondItem="hNc-mi-1DJ" secondAttribute="top" type="default" id="2ag-jn-qcv"/>
-                            <constraint firstItem="NAS-2b-2Ip" firstAttribute="leading" secondItem="09I-oG-N8i" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7IS-qg-RdT"/>
-                            <constraint firstItem="hnI-Ag-hio" firstAttribute="top" secondItem="NY5-HA-D5A" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="A4A-3U-ySF"/>
-                            <constraint firstItem="hnI-Ag-hio" firstAttribute="top" secondItem="NAS-2b-2Ip" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="J9p-mg-jwy"/>
-                            <constraint firstItem="hNc-mi-1DJ" firstAttribute="leading" secondItem="09I-oG-N8i" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LvZ-4b-TEE"/>
-                            <constraint firstItem="Nwh-ar-4lq" firstAttribute="baseline" secondItem="hnI-Ag-hio" secondAttribute="baseline" type="default" id="OGs-hh-tLA"/>
-                            <constraint firstItem="NAS-2b-2Ip" firstAttribute="top" secondItem="hNc-mi-1DJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eXo-Fo-ybR"/>
-                            <constraint firstItem="XX0-xW-eEN" firstAttribute="leading" secondItem="09I-oG-N8i" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="frS-vc-uQs"/>
-                            <constraint firstItem="NY5-HA-D5A" firstAttribute="leading" secondItem="NAS-2b-2Ip" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="hb6-pl-N35"/>
-                            <constraint firstItem="NY5-HA-D5A" firstAttribute="leading" secondItem="hNc-mi-1DJ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="jhB-zi-w7a"/>
-                            <constraint firstItem="Nwh-ar-4lq" firstAttribute="centerX" secondItem="09I-oG-N8i" secondAttribute="centerX" type="default" id="qae-EU-QNc"/>
-                            <constraint firstAttribute="trailing" secondItem="NY5-HA-D5A" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rRy-I2-2DD"/>
-                            <constraint firstItem="Nwh-ar-4lq" firstAttribute="baseline" secondItem="XX0-xW-eEN" secondAttribute="baseline" type="default" id="vlF-rh-g6A"/>
-                            <constraint firstItem="hNc-mi-1DJ" firstAttribute="top" secondItem="09I-oG-N8i" secondAttribute="top" constant="40" id="xTJ-yc-fKC"/>
-                            <constraint firstAttribute="trailing" secondItem="hnI-Ag-hio" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="yoh-qj-SFJ"/>
+                            <constraint firstAttribute="bottom" secondItem="NY5-HA-D5A" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="20Y-RU-jL3"/>
+                            <constraint firstItem="NY5-HA-D5A" firstAttribute="leading" secondItem="09I-oG-N8i" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="34k-yI-Htt"/>
+                            <constraint firstItem="GwN-4U-l2b" firstAttribute="centerY" secondItem="09I-oG-N8i" secondAttribute="centerY" type="default" id="3gx-Vt-prP"/>
+                            <constraint firstItem="tWv-xS-eZI" firstAttribute="top" secondItem="09I-oG-N8i" secondAttribute="top" constant="39" id="5FT-3k-rbg"/>
+                            <constraint firstItem="GwN-4U-l2b" firstAttribute="centerX" secondItem="NY5-HA-D5A" secondAttribute="centerX" type="default" id="9AK-eI-oPe"/>
+                            <constraint firstAttribute="trailing" secondItem="NY5-HA-D5A" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QXs-mg-mvN"/>
+                            <constraint firstItem="GwN-4U-l2b" firstAttribute="centerX" secondItem="tWv-xS-eZI" secondAttribute="centerX" type="default" id="WME-r3-SX5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Diamlo" id="YzV-vn-hb8"/>
-                    <connections>
-                        <outlet property="battleTag" destination="hNc-mi-1DJ" id="R6B-F7-lB3"/>
-                        <outlet property="battleTagNum" destination="NAS-2b-2Ip" id="xoW-bg-EM9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpk-RZ-xEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -497,9 +439,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2Screen-Shot-2012-09-21-at-8.53.29-PM.png" width="114" height="114"/>
         <image name="Angel.png" width="300" height="150"/>
         <image name="Demon.png" width="300" height="150"/>
         <image name="Screen-Shot-2012-09-20-at-7.36.15-PM.png" width="359" height="505"/>
+        <image name="cell_bg.png" width="480" height="210"/>
         <image name="cell_footer.png" width="1064" height="580"/>
     </resources>
     <classes>
@@ -534,11 +478,6 @@
         </class>
         <class className="DBLLoginViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DBLLoginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="setSampleBattleTag:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="battleTag" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="battleTagNum" candidateClass="UITextField"/>
-            </relationships>
         </class>
         <class className="DBLViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DBLViewController.h"/>

@@ -10,8 +10,4 @@
 
 @interface DBLViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UITableView *heroTable;
-@property (strong, nonatomic) IBOutlet UILabel *lastPlayed;
-@property (strong, nonatomic) NSString *battleTag;
-
 @end

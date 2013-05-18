@@ -39,23 +39,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"fireHTTPGetRequest"]) {
-        DBLViewController *vc = [segue destinationViewController];
-        vc.battleTag = [NSString stringWithFormat:@"%@-%@", self.battleTag.text, self.battleTagNum.text];
-        vc.title = [NSString stringWithFormat:@"%@#%@", self.battleTag.text, self.battleTagNum.text];
-    }
+    // ...
 }
 
-- (IBAction)setSampleBattleTag:(UIButton *)sender {
-    if (sender.tag == 101) {
-        self.battleTag.text = @"PoloTheMonk";
-        self.battleTagNum.text = @"1674";
-    } else if (sender.tag == 102) {
-        self.battleTag.text = @"JackFrost";
-        self.battleTagNum.text = @"1841";
-    } else if (sender.tag == 103) {
-        self.battleTag.text = @"nightkids";
-        self.battleTagNum.text = @"1292";
-    }
-}
 @end

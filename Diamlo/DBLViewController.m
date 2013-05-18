@@ -15,7 +15,12 @@
 static NSString *ProfileCell = @"Profile Cell";
 
 @interface DBLViewController () <NSFetchedResultsControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UITableView *heroTable;
+@property (strong, nonatomic) IBOutlet UILabel *lastPlayed;
+
 @property (strong) NSFetchedResultsController *fetchedResultsController;
+
 @end
 
 @implementation DBLViewController

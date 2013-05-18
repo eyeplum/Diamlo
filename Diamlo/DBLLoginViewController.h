@@ -10,8 +10,4 @@
 
 @interface DBLLoginViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *battleTag;
-@property (weak, nonatomic) IBOutlet UITextField *battleTagNum;
-- (IBAction)setSampleBattleTag:(UIButton *)sender;
-
 @end
