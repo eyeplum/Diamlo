@@ -18,7 +18,7 @@
         <relationship name="career" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Career" inverseName="heroes" inverseEntity="Career" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Career" positionX="-524" positionY="216" width="128" height="105"/>
+        <element name="Career" positionX="-524" positionY="216" width="128" height="103"/>
         <element name="Hero" positionX="-369" positionY="218" width="128" height="180"/>
     </elements>
 </model>
