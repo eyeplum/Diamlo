@@ -41,7 +41,11 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
                                     withContext:(NSManagedObjectContext *)context {
     NSMutableURLRequest *mutableURLRequest = nil;
     if ([fetchRequest.entityName isEqualToString:@"Career"]) {
-        mutableURLRequest = [self getRequestWithPath:@"api/d3/profile/jackfrost-1841/"];
+        NSString *path = [NSString stringWithFormat:@"api/d3/profile/polo-1696/"];
+        mutableURLRequest = [self getRequestWithPath:path];
+    } else {
+        mutableURLRequest = [super requestForFetchRequest:fetchRequest
+                                              withContext:context];
     }
 
     return mutableURLRequest;
