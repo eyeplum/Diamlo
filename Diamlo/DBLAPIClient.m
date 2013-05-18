@@ -41,14 +41,27 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
                                     withContext:(NSManagedObjectContext *)context {
     NSMutableURLRequest *mutableURLRequest = nil;
     if ([fetchRequest.entityName isEqualToString:@"Career"]) {
-        NSString *path = [NSString stringWithFormat:@"api/d3/profile/polo-1696/"];
-        mutableURLRequest = [self getRequestWithPath:path];
+        if (fetchRequest.predicate) {
+            NSString *path = [NSString stringWithFormat:@"api/d3/profile/%@/",
+                            [self stripPredicateToBattleTag:fetchRequest.predicate]];
+            mutableURLRequest = [self getRequestWithPath:path];
+        }
     } else {
         mutableURLRequest = [super requestForFetchRequest:fetchRequest
                                               withContext:context];
     }
 
     return mutableURLRequest;
+}
+
+
+- (NSMutableURLRequest *)requestWithMethod:(NSString *)method
+                       pathForObjectWithID:(NSManagedObjectID *)objectID
+                               withContext:(NSManagedObjectContext *)context {
+
+    return [super requestWithMethod:method
+                pathForObjectWithID:objectID
+                        withContext:context];
 }
 
 
@@ -128,6 +141,14 @@ static NSString * const kDBLAPIBaseURLString = @"http://us.battle.net/";
 
 - (NSMutableURLRequest *)getRequestWithPath:(NSString *)path {
     return [self requestWithMethod:@"GET" path:path parameters:nil];
+}
+
+
+- (NSString *)stripPredicateToBattleTag:(NSPredicate *)predicate {
+    NSString *predicateString = [predicate.predicateFormat stringByReplacingOccurrencesOfString:@"#" withString:@"-"];
+    NSString *battleTag = [predicateString stringByReplacingOccurrencesOfString:@"battleTag == " withString:@""];
+    battleTag = [battleTag stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+    return battleTag;
 }
 
 

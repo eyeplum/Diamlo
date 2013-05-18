@@ -36,6 +36,7 @@ static NSString *ProfileCell = @"Profile Cell";
 
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Career"];
     fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"lastUpdated" ascending:YES]];
+//    fetchRequest.predicate = [NSPredicate predicateWithFormat:@"battleTag == %@", @"JackFrost#1841"];
 
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                         managedObjectContext:appDelegate.managedObjectContext
@@ -63,6 +64,8 @@ static NSString *ProfileCell = @"Profile Cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Career *career = [self.fetchedResultsController objectAtIndexPath:indexPath];
     NSArray *heroes = [career.heroes allObjects];
+
+    NSLog(@"\n\n--------------- Heroes --------------");
     for (Hero *hero in heroes) {
         NSLog(@"%@", hero.name);
     }
