@@ -76,7 +76,7 @@
             </objects>
             <point key="canvasLocation" x="275" y="299"/>
         </scene>
-        <!--View Controller - Heroes-->
+        <!--View Controller - Careers-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="DBLViewController" sceneMemberID="viewController">
@@ -179,7 +179,7 @@
                             <constraint firstItem="zvH-lB-6dC" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="zpc-Rf-DUD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Heroes" id="zk9-Bd-kyn"/>
+                    <navigationItem key="navigationItem" title="Careers" id="zk9-Bd-kyn"/>
                     <connections>
                         <outlet property="heroTable" destination="zvH-lB-6dC" id="YBs-1i-WyZ"/>
                         <outlet property="lastPlayed" destination="eDh-KO-oX4" id="l8i-lN-aqN"/>
