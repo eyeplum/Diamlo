@@ -29,6 +29,7 @@
 		0B9EA2C6162459530041D0B3 /* Angel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9EA2C4162459530041D0B3 /* Angel.png */; };
 		0B9EA2C7162459530041D0B3 /* Demon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9EA2C5162459530041D0B3 /* Demon.png */; };
 		0B9EA2D316245D630041D0B3 /* navi_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9EA2D216245D630041D0B3 /* navi_bg@2x.png */; };
+		0BB675791749104400E02E23 /* DBLAddCareerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB675781749104400E02E23 /* DBLAddCareerViewController.m */; };
 		0BD19FDE160816FC00EF8251 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD19FDD160816FC00EF8251 /* CFNetwork.framework */; };
 		0BD19FE01608170600EF8251 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD19FDF1608170600EF8251 /* SystemConfiguration.framework */; };
 		0BD19FE21608171100EF8251 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD19FE11608171100EF8251 /* Security.framework */; };
@@ -74,6 +75,8 @@
 		0B9EA2C4162459530041D0B3 /* Angel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Angel.png; sourceTree = "<group>"; };
 		0B9EA2C5162459530041D0B3 /* Demon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Demon.png; sourceTree = "<group>"; };
 		0B9EA2D216245D630041D0B3 /* navi_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_bg@2x.png"; sourceTree = "<group>"; };
+		0BB675771749104400E02E23 /* DBLAddCareerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLAddCareerViewController.h; sourceTree = "<group>"; };
+		0BB675781749104400E02E23 /* DBLAddCareerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLAddCareerViewController.m; sourceTree = "<group>"; };
 		0BD19FDD160816FC00EF8251 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0BD19FDF1608170600EF8251 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0BD19FE11608171100EF8251 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -201,6 +204,8 @@
 				0B3A103E1609F924008F3A63 /* DBLHeroViewController.m */,
 				0B1C42A4160B41A80084935C /* DBLItemDeailViewController.h */,
 				0B1C42A5160B41A80084935C /* DBLItemDeailViewController.m */,
+				0BB675771749104400E02E23 /* DBLAddCareerViewController.h */,
+				0BB675781749104400E02E23 /* DBLAddCareerViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				B31397C488F8AEB851B665CE /* DBLAPIClient.m in Sources */,
 				915AE6111746528E001662FA /* Hero.m in Sources */,
 				915AE6141746528E001662FA /* Career.m in Sources */,
+				0BB675791749104400E02E23 /* DBLAddCareerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
